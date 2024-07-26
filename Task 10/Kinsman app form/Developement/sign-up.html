@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(ava.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px; /* Increased max width for better alignment */
+        }
+
+        .form {
+            background: rgba(118, 194, 198, 0.8); /* Semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            display: flex; /* Use flexbox for vertical alignment */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center align elements */
+        }
+
+        .form h2 {
+            margin-top: 0;
+            color: #000000;
+            text-align: center; /* Center the heading */
+        }
+
+        .form input,
+        .form select,
+        .form textarea,
+        .form button {
+            width: 100%; /* Full width for inputs */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #5a74ae;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding and border in element's total width */
+        }
+
+        .form button {
+            background: linear-gradient(to right, #6e27e0, #a42bf2);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            opacity: 0.9;
+        }
+
+        .form a {
+            color: #6e27e0;
+            text-decoration: none;
+        }
+
+        .form a:hover {
+            text-decoration: underline;
+        }
+
+        .form .social-login a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #fff;
+            background: #6e27e0;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .range, .sort, .checkboxes {
+            margin-bottom: 15px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="form sign-up">
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="User Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Mobile Number" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
